@@ -1,5 +1,5 @@
 
-###Es muss folgende per Download installiert werden:
+### Es muss folgende per Download installiert werden:
 * [InteliJ](https://www.jetbrains.com/idea/download/)
 * [NodeJS](https://nodejs.org/en/download/)
 * [GitShell](https://git-scm.com/downloads)
@@ -30,3 +30,6 @@ sudo yarn global add ionic@latest
 sudo yarn global add cordova
 sudo yarn install
 ```
+
+### Installieren einer App auf einem IOS-Testgerät
+* ist nach folgender Anleitung sdurchzuführen: https://ionicframework.com/docs/intro/deploying/

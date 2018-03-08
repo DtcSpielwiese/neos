@@ -1,5 +1,5 @@
 # neos
-###[Einrichtung neuer Hardware](macbook.md)
+### [Einrichtung neuer Hardware](macbook.md)
 
 ###Anlegen eines neuen Ionic-Projektes
 
