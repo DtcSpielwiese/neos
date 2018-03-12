@@ -33,3 +33,9 @@ sudo yarn install
 
 ### Installieren einer App auf einem IOS-Testgerät
 * ist nach folgender Anleitung sdurchzuführen: https://ionicframework.com/docs/intro/deploying/
+
+
+### Praktische IntelliJ Erweiterungen:
+Aufruf der Plugins:
+Preferences (Tastenkürzel: ⌘, ) --> Plugins --> Suche 
+* .ignore
