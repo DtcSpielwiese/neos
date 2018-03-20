@@ -42,18 +42,20 @@ public class MongoDbAccess {
             filter = Filters.eq("PLZ", plzStartWith);
         }
         else {
-            Bson filterVon = Filters.gte("PLZ", plzStartWith);
-
             String plzBis = String.valueOf(plzStartWith);
+            String plzVon = String.valueOf(plzStartWith);
             int plzBisLength = plzBis.length();
 
             for (int i = plzBisLength; i < 4; i++) {
                 plzBis+="9";
+                plzVon+="0";
             }
 
-            Bson filterBis = Filters.lte("PLZ", Integer.valueOf(plzBis));
 
-            filter = Filters.and(filterVon, filterBis);
+            filter = Filters.and(
+                    Filters.gte("PLZ", Integer.valueOf(plzVon)),
+                    Filters.lte("PLZ", Integer.valueOf(plzBis))
+                    );
         }
 
 
