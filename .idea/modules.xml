@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NeoServices.iml" filepath="$PROJECT_DIR$/.idea/modules/NeoServices.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NeoServices_main.iml" filepath="$PROJECT_DIR$/.idea/modules/NeoServices_main.iml" group="NeoServices" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NeoServices_test.iml" filepath="$PROJECT_DIR$/.idea/modules/NeoServices_test.iml" group="NeoServices" />
+      <module fileurl="file://$PROJECT_DIR$/VergleichsRechner/VergleichsRechner.iml" filepath="$PROJECT_DIR$/VergleichsRechner/VergleichsRechner.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/neos.iml" filepath="$PROJECT_DIR$/.idea/neos.iml" />
     </modules>
   </component>
