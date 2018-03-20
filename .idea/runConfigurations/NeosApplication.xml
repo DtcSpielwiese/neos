@@ -2,7 +2,7 @@
   <configuration default="false" name="NeosApplication" type="Application" factoryName="Application" nameIsGenerated="true">
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
       <pattern>
-        <option name="PATTERN" value="de.msg.gbn.dtc.neos.db.*" />
+        <option name="PATTERN" value="de.msg.gbn.dtc.neos.dropwizard.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>
@@ -15,7 +15,7 @@
     <option name="ENABLE_SWING_INSPECTOR" value="false" />
     <option name="ENV_VARIABLES" />
     <option name="PASS_PARENT_ENVS" value="true" />
-    <module name="Services_main" />
+    <module name="NeoServices_main" />
     <envs />
     <method />
   </configuration>

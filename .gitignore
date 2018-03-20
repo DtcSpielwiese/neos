@@ -61,3 +61,6 @@ Services/.idea/libraries
 Services/out
 Services/.gradle
 /.idea/workspace.xml
+/NeoServices/.gradle/
+/NeoServices/out/
+/.idea/libraries/
