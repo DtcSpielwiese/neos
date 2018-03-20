@@ -24,16 +24,12 @@ public class NeosApplication extends Application<NeosConfiguration> {
     public void run(NeosConfiguration configuration,
                     Environment environment) {
 
-        final TarifeResource resource = new TarifeResource(
-                configuration.getMongoDbUri(),
-                configuration.getMongoDbName()
-        );
-
         final TemplateHealthCheck healthCheck =
                 new TemplateHealthCheck(configuration.getTemplate());
 
         environment.healthChecks().register("template", healthCheck);
-        environment.jersey().register(resource);
+        environment.jersey().register(new TarifeResource(configuration.getMongoDbUri(), configuration.getMongoDbName()));
+        environment.jersey().register(new RegionenResource(configuration.getMongoDbUri(), configuration.getMongoDbName()));
     }
 
 }

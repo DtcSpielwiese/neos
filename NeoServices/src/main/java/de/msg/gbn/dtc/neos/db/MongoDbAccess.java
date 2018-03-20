@@ -11,6 +11,8 @@ import com.mongodb.util.JSON;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 
+import java.util.regex.Pattern;
+
 
 public class MongoDbAccess {
 
@@ -23,20 +25,57 @@ public class MongoDbAccess {
         this.dbName = dbName;
     }
 
-    public String filterNeos(TarifeFilter tarifeFilter) {
+    public String filterTarife(TarifeFilter tarifeFilter) {
+
+        Bson filter = Filters.and(tarifeFilter.toBsonFilters());
+        return doFilter("neo_praemien", filter, "Tarifbezeichnung", "Prämie", "isBaseP", "isBaseF", "Unfalleinschluss", "Altersuntergruppe");
+    }
+
+    public String filterRegionen(int plzStartWith) {
+
+        //Pattern pattern = Pattern.compile("^"+Pattern.quote(plzStartWith), Pattern.CASE_INSENSITIVE);
+        //Bson filter2 = Filters.regex("PLZ", pattern);
+
+        Bson filter = null;
+
+        if (String.valueOf(plzStartWith).length() == 4) {
+            filter = Filters.eq("PLZ", plzStartWith);
+        }
+        else {
+            Bson filterVon = Filters.gte("PLZ", plzStartWith);
+
+            String plzBis = String.valueOf(plzStartWith);
+            int plzBisLength = plzBis.length();
+
+            for (int i = plzBisLength; i < 4; i++) {
+                plzBis+="9";
+            }
+
+            Bson filterBis = Filters.lte("PLZ", Integer.valueOf(plzBis));
+
+            filter = Filters.and(filterVon, filterBis);
+        }
+
+
+        return doFilter("neo_regionen", filter, "PLZ", "Ortsbezeichnung", "Kanton", "Region", "BFS-Nr", "Gemeinde", "Bezirk");
+    }
+
+
+
+    private String doFilter(final String collectionName, final Bson filter, final String... selectFieldNames) {
+
         MongoClientURI connectionString = new MongoClientURI(this.dbUri);
 
         try (MongoClient mongoClient = new MongoClient(connectionString))
         {
             MongoDatabase database = mongoClient.getDatabase(this.dbName);
 
-            MongoCollection<Document> collection = database.getCollection("neo_praemien");
+            MongoCollection<Document> collection = database.getCollection(collectionName);
 
-            Bson filter = Filters.and(tarifeFilter.toBsonFilters());
-
-            FindIterable<Document> results = collection.find(filter).projection(Projections.include("Tarifbezeichnung", "Prämie", "isBaseP", "isBaseF", "Unfalleinschluss", "Altersuntergruppe"));
+            FindIterable<Document> results = collection.find(filter).projection(Projections.include(selectFieldNames));
             return JSON.serialize(results);
         }
+
     }
 
 

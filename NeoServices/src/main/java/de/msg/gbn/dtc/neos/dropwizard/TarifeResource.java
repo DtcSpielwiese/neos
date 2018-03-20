@@ -1,6 +1,5 @@
 package de.msg.gbn.dtc.neos.dropwizard;
 
-import com.codahale.metrics.annotation.Timed;
 import de.msg.gbn.dtc.neos.db.Altersklasse;
 import de.msg.gbn.dtc.neos.db.MongoDbAccess;
 import de.msg.gbn.dtc.neos.db.TarifeFilter;
@@ -10,7 +9,6 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Optional;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Path("/tarife")
 @Produces(MediaType.APPLICATION_JSON)
@@ -88,7 +86,7 @@ public class TarifeResource {
                 filter.setAltersuntergruppe(altersuntergruppe.get());
             }
 
-            String json = new MongoDbAccess(this.mongoDbUri, this.mongoDbName).filterNeos(filter);
+            String json = new MongoDbAccess(this.mongoDbUri, this.mongoDbName).filterTarife(filter);
             return Response.ok(json, MediaType.APPLICATION_JSON).build();
 
         }
