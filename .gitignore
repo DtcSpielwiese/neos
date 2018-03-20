@@ -58,6 +58,5 @@ typings/
 .env
 
 Services/.idea/libraries
-Services/.idea/modules
 Services/out
 Services/.gradle
