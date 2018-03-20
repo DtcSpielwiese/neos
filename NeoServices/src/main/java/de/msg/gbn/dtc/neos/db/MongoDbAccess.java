@@ -14,15 +14,23 @@ import org.bson.conversions.Bson;
 
 public class MongoDbAccess {
 
+    private String dbUri;
+    private String dbName;
 
-    public static String filterNeos(TarifeFilter tarifeFilter) {
-        MongoClientURI connectionString = new MongoClientURI("mongodb://admin:admin@localhost:27020");
+
+    public MongoDbAccess(String dbUri, String dbName) {
+        this.dbUri = dbUri;
+        this.dbName = dbName;
+    }
+
+    public String filterNeos(TarifeFilter tarifeFilter) {
+        MongoClientURI connectionString = new MongoClientURI(this.dbUri);
 
         try (MongoClient mongoClient = new MongoClient(connectionString))
         {
-            MongoDatabase database = mongoClient.getDatabase("lotto-mongo-db");
+            MongoDatabase database = mongoClient.getDatabase(this.dbName);
 
-            MongoCollection<Document> collection = database.getCollection("neos");
+            MongoCollection<Document> collection = database.getCollection("neo_praemien");
 
             Bson filter = Filters.and(tarifeFilter.toBsonFilters());
 

@@ -1,2 +1,4 @@
 template: Hello, %s!
 defaultName: Eugen
+mongoDbUri: mongodb://admin:admin@localhost:27020
+mongoDbName: lotto-mongo-db

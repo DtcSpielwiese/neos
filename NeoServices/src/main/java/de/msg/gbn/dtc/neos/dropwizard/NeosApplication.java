@@ -24,9 +24,9 @@ public class NeosApplication extends Application<NeosConfiguration> {
     public void run(NeosConfiguration configuration,
                     Environment environment) {
 
-        final NeosResource resource = new NeosResource(
-                configuration.getTemplate(),
-                configuration.getDefaultName()
+        final TarifeResource resource = new TarifeResource(
+                configuration.getMongoDbUri(),
+                configuration.getMongoDbName()
         );
 
         final TemplateHealthCheck healthCheck =

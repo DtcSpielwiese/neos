@@ -14,23 +14,14 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @Path("/tarife")
 @Produces(MediaType.APPLICATION_JSON)
-public class NeosResource {
+public class TarifeResource {
 
-    private final String template;
-    private final String defaultName;
-    private final AtomicLong counter;
+    private final String mongoDbUri;
+    private final String mongoDbName;
 
-    public NeosResource(String template, String defaultName) {
-        this.template = template;
-        this.defaultName = defaultName;
-        this.counter = new AtomicLong();
-    }
-
-    @GET
-    @Timed
-    public Saying sayHello(@QueryParam("name") Optional<String> name) {
-        final String value = String.format(template, name.orElse(defaultName));
-        return new Saying(counter.incrementAndGet(), value);
+    public TarifeResource(String mongoDbUri, String mongoDbName) {
+        this.mongoDbUri = mongoDbUri;
+        this.mongoDbName = mongoDbName;
     }
 
     /**
@@ -97,7 +88,7 @@ public class NeosResource {
                 filter.setAltersuntergruppe(altersuntergruppe.get());
             }
 
-            String json = MongoDbAccess.filterNeos(filter);
+            String json = new MongoDbAccess(this.mongoDbUri, this.mongoDbName).filterNeos(filter);
             return Response.ok(json, MediaType.APPLICATION_JSON).build();
 
         }

@@ -7,6 +7,12 @@ import org.hibernate.validator.constraints.NotEmpty;
 public class NeosConfiguration extends Configuration {
 
     @NotEmpty
+    private String mongoDbUri;
+
+    @NotEmpty
+    private String mongoDbName;
+
+    @NotEmpty
     private String template;
 
     @NotEmpty
@@ -30,5 +36,25 @@ public class NeosConfiguration extends Configuration {
     @JsonProperty
     public void setDefaultName(String name) {
         this.defaultName = name;
+    }
+
+    @JsonProperty
+    public String getMongoDbUri() {
+        return mongoDbUri;
+    }
+
+    @JsonProperty
+    public void setMongoDbUri(String mongoDbUri) {
+        this.mongoDbUri = mongoDbUri;
+    }
+
+    @JsonProperty
+    public String getMongoDbName() {
+        return mongoDbName;
+    }
+
+    @JsonProperty
+    public void setMongoDbName(String mongoDbName) {
+        this.mongoDbName = mongoDbName;
     }
 }
