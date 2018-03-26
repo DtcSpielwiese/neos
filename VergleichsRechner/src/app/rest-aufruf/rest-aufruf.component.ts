@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {RestApiProvider} from "../providers/rest-api/rest-api";
+import {RestApiProvider} from '../providers/rest-api/rest-api';
+import {Tarif} from '../model/tarif';
 
 @Component({
   selector: 'app-rest-aufruf',
@@ -7,29 +8,25 @@ import {RestApiProvider} from "../providers/rest-api/rest-api";
   styleUrls: ['./rest-aufruf.component.scss']
 })
 export class RestAufrufComponent implements OnInit {
-  // pizzaSelection:string;
-  restResponse: string;
-;
 
-  constructor(public rest: RestApiProvider) {  this.restResponse = 'initial Response from the Service';}
+  private tarife: Tarif[];
+  private cols: any[];
+
+
+  constructor(public rest: RestApiProvider) { }
 
   ngOnInit() {
-    this.getTarife();
-  }
-  getTarife() {
-    this.rest.getTarife();
-     /* .subscribe(
-        v => this.getTarife = v,
-        error =>  this.errorMessage = <any>error
-        , () => {
-          this.getTarife.sort((c1, c2) =>
-          {
-            console.log("sort....");
-            if (c1.translations["de"] < c2.translations["de"]) return -1;
-            else if (c1.translations["de"] > c2.translations["de"]) return 1;
-            return 0;
-          });
-          this.countries_paging = this.countries.slice(this.current_page, this.paging)
-        });*/
+
+    this.cols = [
+      { field: 'Unfalleinschluss', header: 'Unfalleinschluss' },
+      { field: 'Tarifbezeichnung', header: 'Tarifbezeichnung' },
+      { field: 'Prämie', header: 'Prämie' },
+    ];
+    this.rest.getTarife().subscribe(
+      v => this.tarife = v,
+      error => { throw Error(error); },
+      () => {
+        }
+    );
   }
 }

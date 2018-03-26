@@ -64,3 +64,7 @@ Services/.gradle
 /NeoServices/.gradle/
 /NeoServices/out/
 /.idea/libraries/
+/docker/mongodb/Wertebereiche_CH.csv
+/docker/mongodb/Versicherungen_CH.csv
+/docker/mongodb/Regionen_CH.csv
+/docker/mongodb/Praemien_CH.csv

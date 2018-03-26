@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 
 import {PrimengModule} from "./primeng.module";
 import {AppRoutingModule} from "./app-routing.module";
+import {RestApiProvider} from "./providers/rest-api/rest-api";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import {AppRoutingModule} from "./app-routing.module";
     PrimengModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [RestApiProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

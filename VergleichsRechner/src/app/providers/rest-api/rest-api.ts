@@ -1,8 +1,9 @@
-import { HttpClient } from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { Observable} from "rxjs/Observable";
 import {map, catchError} from "rxjs/operators";
+import {Tarif} from "../../model/tarif";
 
 /*
   Generated class for the RestApiProvider provider.
@@ -13,20 +14,19 @@ import {map, catchError} from "rxjs/operators";
 @Injectable()
 export class RestApiProvider {
 
-  private countries: Observable<any[]> = null;
   private apiUrl = 'http://localhost:8080/tarife/HMO/AG/0/KIN/0';
 
   constructor(public http: HttpClient) {}
 
   getTarife() : Observable<any[]> {
-    if (this.countries == null) {
-      this.countries = this.http.get(this.apiUrl).pipe(
-        map(this.extractData),
-        catchError(this.handleError)
-      );
-    }
 
-    return this.countries;
+
+    const tarife: Observable<any[]> = this.http.get(this.apiUrl).pipe(
+      map(this.extractData),
+      catchError(this.handleError)
+    );
+
+    return tarife;
   }
 
   private extractData(res: Response) {
