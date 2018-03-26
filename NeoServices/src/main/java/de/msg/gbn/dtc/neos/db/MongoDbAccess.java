@@ -28,7 +28,7 @@ public class MongoDbAccess {
     public String filterTarife(TarifeFilter tarifeFilter) {
 
         Bson filter = Filters.and(tarifeFilter.toBsonFilters());
-        return doFilter("neo_praemien", filter, "Tarifbezeichnung", "Prämie", "isBaseP", "isBaseF", "Unfalleinschluss", "Altersuntergruppe");
+        return doFilter("neo_praemien", filter, "Tarifbezeichnung", "Tarif", "Prämie", "isBaseP", "isBaseF", "Unfalleinschluss", "Altersuntergruppe");
     }
 
     public String filterRegionen(int plzStartWith) {

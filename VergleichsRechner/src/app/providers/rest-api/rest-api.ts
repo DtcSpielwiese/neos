@@ -18,6 +18,23 @@ export class RestApiProvider {
 
   constructor(public http: HttpClient) {}
 
+  findTarife(tariftyp: string, kanton: string, region: string, altersklasse: string, franchise: string, mitUnfall: boolean, isBaseP: boolean, isBaseF: boolean) : Observable<any[]> {
+
+
+    let url: string;
+    url = `http://localhost:8080/tarife/${tariftyp}/${kanton}/${region}/${altersklasse}/${franchise}`;
+    url += '?unfalleinschluss=' + (mitUnfall ? '1' : '0');
+    url += '&baseTarif=' + (isBaseP ? '1' : '0');
+    url += '&baseFranchise=' + (isBaseF ? '1' : '0');
+
+    const tarife: Observable<any[]> = this.http.get(url).pipe(
+      map(this.extractData),
+      catchError(this.handleError)
+    );
+
+    return tarife;
+  }
+
   getTarife() : Observable<any[]> {
 
 

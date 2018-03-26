@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import { RestAufrufComponent } from './rest-aufruf/rest-aufruf.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {PrimengModule} from "./primeng.module";
 import {AppRoutingModule} from "./app-routing.module";
@@ -22,6 +22,7 @@ import {RestApiProvider} from "./providers/rest-api/rest-api";
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     PrimengModule,
     AppRoutingModule
   ],

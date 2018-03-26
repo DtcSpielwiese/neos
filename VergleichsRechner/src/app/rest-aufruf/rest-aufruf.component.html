@@ -1,5 +1,138 @@
-<h3 class="first">Tarife</h3>
-<p-table [columns]="cols" [value]="tarife">
+<p-growl [value]="msgs" sticky="sticky"></p-growl>
+<form [formGroup]="userform" (ngSubmit)="onSubmit(userform.value)">
+  <p-panel header="Vergleichsrechner">
+    <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
+
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Tariftyp *:
+        </div>
+        <div class="ui-grid-col-6">
+          <p-radioButton *ngFor="let t of this.tariftypen" name="tarifTypGroup" formControlName="tariftyp" [label]="t" [value]="t" [(ngModel)]="selectedTarif"></p-radioButton>
+        </div>
+        <div class="ui-grid-col-4">
+          <div class="ui-message ui-messages-error ui-corner-all" *ngIf="!userform.controls['tariftyp'].valid&&userform.controls['tariftyp'].dirty">
+            <i class="fa fa-close"></i>
+            Bitte den Tariftyp angeben!
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Altersklasse *:
+        </div>
+        <div class="ui-grid-col-6">
+          <p-dropdown [options]="altersklassen" formControlName="altersklasse" [autoWidth]="false"></p-dropdown>
+        </div>
+        <div class="ui-grid-col-4">
+          <div class="ui-message ui-messages-error ui-corner-all" *ngIf="!userform.controls['altersklasse'].valid&&userform.controls['altersklasse'].dirty">
+            <i class="fa fa-close"></i>
+            bitte die Altersklasse angeben!
+          </div>
+        </div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Kanton *:
+        </div>
+        <div class="ui-grid-col-6">
+          <input pInputText type="text" formControlName="kanton" placeholder="z.B. AG"/>
+        </div>
+        <div class="ui-grid-col-4">
+          <div class="ui-message ui-messages-error ui-corner-all" *ngIf="!userform.controls['kanton'].valid&&userform.controls['kanton'].dirty">
+            <i class="fa fa-close"></i>
+            <span *ngIf="userform.controls['kanton'].errors['required']">Bitte geben Sie den Kanton an!</span>
+            <span *ngIf="userform.controls['kanton'].errors['minlength']">Mindestens zweistellig</span>
+            <span *ngIf="userform.controls['kanton'].errors['maxlength']">Höchstens zweistellig</span>
+          </div>
+        </div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Region *:
+        </div>
+        <div class="ui-grid-col-6">
+          <p-dropdown [options]="regionen" formControlName="region" [autoWidth]="false"></p-dropdown>
+        </div>
+        <div class="ui-grid-col-4">
+          <div class="ui-message ui-messages-error ui-corner-all" *ngIf="!userform.controls['region'].valid&&userform.controls['region'].dirty">
+            <i class="fa fa-close"></i>
+            Bitte die Region angeben!
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Franchise *:
+        </div>
+        <div class="ui-grid-col-6">
+          <p-dropdown [options]="franchisen" formControlName="franchise" [autoWidth]="false"></p-dropdown>
+        </div>
+        <div class="ui-grid-col-4">
+          <div class="ui-message ui-messages-error ui-corner-all" *ngIf="!userform.controls['franchise'].valid&&userform.controls['franchise'].dirty">
+            <i class="fa fa-close"></i>
+            Bitte die Franchise angeben!
+          </div>
+        </div>
+      </div>
+
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Mit Unfall? :
+        </div>
+        <div class="ui-grid-col-6">
+          <p-checkbox [(ngModel)]="mitUnfall" formControlName="mitUnfall" binary="true"></p-checkbox>
+        </div>
+        <div class="ui-grid-col-4">
+        </div>
+      </div>
+
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Tarif Base? :
+        </div>
+        <div class="ui-grid-col-6">
+          <p-checkbox [(ngModel)]="isBaseP" formControlName="isBaseP" binary="true"></p-checkbox>
+        </div>
+        <div class="ui-grid-col-4">
+        </div>
+      </div>
+
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          Ordentliche Franchise? :
+        </div>
+        <div class="ui-grid-col-6">
+          <p-checkbox [(ngModel)]="isBaseF" formControlName="isBaseF" binary="true"></p-checkbox>
+        </div>
+        <div class="ui-grid-col-4">
+        </div>
+      </div>
+
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2"></div>
+        <div class="ui-grid-col-6">
+          <button pButton type="submit" label="Vergleichen" [disabled]="!userform.valid"></button>
+        </div>
+        <div class="ui-grid-col-4"></div>
+      </div>
+      <div style="text-align:center;margin-top:20px" *ngIf="submitted">
+        <a href="{{diagnostic}}" target="_blank">{{diagnostic}}</a>
+      </div>
+    </div>
+  </p-panel>
+</form>
+
+<p-table *ngIf="this.tarife!=null && this.tarife.length>0" #dt [columns]="cols" [value]="tarife" [paginator]="true" [rows]="20">
+  <ng-template pTemplate="caption">
+    <div style="text-align: right">
+      <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+      <input type="text" pInputText size="50" placeholder="Global Filter" (input)="dt.filterGlobal($event.target.value, 'contains')" style="width:auto">
+    </div>
+  </ng-template>
   <ng-template pTemplate="header" let-columns>
     <tr>
       <th *ngFor="let col of columns">
