@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 import { Observable} from "rxjs/Observable";
 import {map, catchError} from "rxjs/operators";
-import {Tarif} from "../../model/tarif";
+import {environment} from "../../../environments/environment";
 
 /*
   Generated class for the RestApiProvider provider.
@@ -22,7 +22,7 @@ export class RestApiProvider {
 
 
     let url: string;
-    url = `http://localhost:8080/tarife/${tariftyp}/${kanton}/${region}/${altersklasse}/${franchise}`;
+    url = `${environment.NEO_SERVICES_HOST}/tarife/${tariftyp}/${kanton}/${region}/${altersklasse}/${franchise}`;
     url += '?unfalleinschluss=' + (mitUnfall ? '1' : '0');
     url += '&baseTarif=' + (isBaseP ? '1' : '0');
     url += '&baseFranchise=' + (isBaseF ? '1' : '0');
@@ -35,16 +35,6 @@ export class RestApiProvider {
     return tarife;
   }
 
-  getTarife() : Observable<any[]> {
-
-
-    const tarife: Observable<any[]> = this.http.get(this.apiUrl).pipe(
-      map(this.extractData),
-      catchError(this.handleError)
-    );
-
-    return tarife;
-  }
 
   private extractData(res: Response) {
     let body = res;

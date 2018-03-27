@@ -3,6 +3,7 @@ import {RestApiProvider} from '../providers/rest-api/rest-api';
 import {Tarif} from '../model/tarif';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Message, SelectItem} from 'primeng/api';
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-rest-aufruf',
@@ -11,8 +12,8 @@ import {Message, SelectItem} from 'primeng/api';
 })
 export class RestAufrufComponent implements OnInit {
 
-  private tarife: Tarif[];
-  private cols: any[];
+  tarife: Tarif[];
+  cols: any[];
 
   tariftypen: string[] = ['BASE', 'DIV', 'HAM', 'HMO' ];
   selectedTarif: string;
@@ -20,9 +21,14 @@ export class RestAufrufComponent implements OnInit {
 
   userform: FormGroup;
 
-  submitted, mitUnfall, isBaseP, isBaseF: boolean;
+  submitted: boolean;
+  mitUnfall: boolean;
+  isBaseP: boolean;
+  isBaseF: boolean;
 
-  altersklassen, regionen,  franchisen: SelectItem[];
+  altersklassen: SelectItem[];
+  regionen: SelectItem[];
+  franchisen: SelectItem[];
 
   constructor(public rest: RestApiProvider, private fb: FormBuilder) { }
 
@@ -101,7 +107,7 @@ export class RestAufrufComponent implements OnInit {
 
   get diagnostic() {
     let url: string;
-    url = `http://localhost:8080/tarife/${this.selectedTarif}/${this.userform.value['kanton']}/${this.userform.value['region']}/${this.userform.value['altersklasse']}/${this.userform.value['franchise']}`;
+    url = `${environment.NEO_SERVICES_HOST}/tarife/${this.selectedTarif}/${this.userform.value['kanton']}/${this.userform.value['region']}/${this.userform.value['altersklasse']}/${this.userform.value['franchise']}`;
     url += '?unfalleinschluss=' + (this.mitUnfall ? '1' : '0');
     url += '&baseTarif=' + (this.isBaseP ? '1' : '0');
     url += '&baseFranchise=' + (this.isBaseF ? '1' : '0');
