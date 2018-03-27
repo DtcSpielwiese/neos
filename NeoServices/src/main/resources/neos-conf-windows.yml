@@ -1,0 +1,4 @@
+template: Hello, %s!
+defaultName: Eugen
+mongoDbUri: mongodb://admin:admin@192.168.99.100:27020
+mongoDbName: lotto-mongo-db
