@@ -75,6 +75,8 @@ export class RestAufrufComponent implements OnInit {
 
 
     this.cols = [
+      { field: 'Versichererbezeichnung', header: 'Versicherer' },
+      { field: 'Versichererort', header: 'Sitz des Versicherers' },
       { field: 'Tarifbezeichnung', header: 'Tarifbezeichnung' },
       { field: 'Tarif', header: 'Tarif' },
       { field: 'Altersuntergruppe', header: 'Altersuntergruppe' },

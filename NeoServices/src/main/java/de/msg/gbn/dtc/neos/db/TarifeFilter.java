@@ -1,8 +1,10 @@
 package de.msg.gbn.dtc.neos.db;
 
+import com.mongodb.client.model.Aggregates;
 import com.mongodb.client.model.Filters;
 import org.bson.conversions.Bson;
 
+import javax.swing.text.StyledEditorKit;
 import java.util.ArrayList;
 
 public class TarifeFilter {
@@ -103,6 +105,18 @@ public class TarifeFilter {
         if (this.baseFranchise!=null) filters.add(Filters.eq("isBaseF", this.baseFranchise.intValue()));
 
         return filters;
+
+    }
+    public ArrayList<Bson> toBsonAggregateMatches() {
+
+        Iterable<Bson> filters = toBsonFilters();
+        ArrayList<Bson> matches = new ArrayList<>();
+
+        for (Bson filter : filters) {
+            matches.add(Aggregates.match(filter));
+        }
+
+        return matches;
 
     }
 }
