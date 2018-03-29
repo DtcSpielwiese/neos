@@ -28,6 +28,12 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false
+    singleRun: false,
+    files: [
+      "styles.scss",
+      "node_modules/font-awesome/css/font-awesome.min.css",
+      "node_modules/primeng/resources/primeng.min.css",
+      "node_modules/primeng/resources/themes/cupertino/theme.css"
+    ]
   });
 };
