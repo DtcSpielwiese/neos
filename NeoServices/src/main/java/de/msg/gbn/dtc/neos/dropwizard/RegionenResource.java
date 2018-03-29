@@ -22,14 +22,8 @@ public class RegionenResource {
     @Path("{plzStartWith}")
     public Response filterTarife(@PathParam("plzStartWith") int plz) {
 
-        try {
+        String json = new MongoDbAccess(this.mongoDbUri, this.mongoDbName).filterRegionen(plz);
+        return Response.ok(json, MediaType.APPLICATION_JSON).build();
 
-            String json = new MongoDbAccess(this.mongoDbUri, this.mongoDbName).filterRegionen(plz);
-            return Response.ok(json, MediaType.APPLICATION_JSON).build();
-
-        }
-        catch (Throwable e) {
-            return Response.serverError().entity("Unerwarteter Fehler: " + e.getMessage()).build();
-        }
     }
 }

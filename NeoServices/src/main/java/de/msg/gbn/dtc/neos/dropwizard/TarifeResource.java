@@ -50,48 +50,45 @@ public class TarifeResource {
             , @QueryParam("altersuntergruppe") Optional<String> altersuntergruppe
             ) {
 
-        try {
-
-            TarifeFilter filter = new TarifeFilter();
-            filter.setTariftyp(tariftyp);
-            filter.setAltersklasse(altersklasse);
+        TarifeFilter filter = new TarifeFilter();
+        filter.setTariftyp(tariftyp);
+        filter.setAltersklasse(altersklasse);
 
 
-            if (kanton==null) {
-                return Response.status(Response.Status.BAD_REQUEST).entity("Kanton muss übergeben werden, z.B.: '/AG'").build();
-            }
-            else{
-                filter.setKanton(kanton);
-            }
-
-            if (region==null) {
-                return Response.status(Response.Status.BAD_REQUEST).entity("Region muss übergeben werden, z.B.: '/0'").build();
-            }
-            else{
-                filter.setRegion(region);
-            }
-
-            if (franchise ==null) {
-                return Response.status(Response.Status.BAD_REQUEST).entity("Franchise muss übergeben werden, z.B.: '/200'").build();
-            }
-            else{
-                filter.setFranchise(franchise);
-            }
-
-            if (unfalleinschluss.isPresent()) filter.setUnfalleinschluss(1 == unfalleinschluss.get());
-            filter.setBaseFranchise(baseFranchise.orElse(null));
-            filter.setBaseTarif(baseTarif.orElse(null));
-
-            if (altersuntergruppe.isPresent()) {
-                filter.setAltersuntergruppe(altersuntergruppe.get());
-            }
-
-            String json = new MongoDbAccess(this.mongoDbUri, this.mongoDbName).filterTarife(filter);
-            return Response.ok(json, MediaType.APPLICATION_JSON).build();
-
+        if (kanton==null) {
+            return Response.status(Response.Status.BAD_REQUEST).entity("Kanton muss übergeben werden, z.B.: '/AG'").build();
         }
-        catch (Throwable e) {
-            return Response.serverError().entity("Unerwarteter Fehler: " + e.getMessage()).build();
+        else{
+            filter.setKanton(kanton);
         }
+
+        if (region==null) {
+            return Response.status(Response.Status.BAD_REQUEST).entity("Region muss übergeben werden, z.B.: '/0'").build();
+        }
+        else{
+            filter.setRegion(region);
+        }
+
+        if (franchise ==null) {
+            return Response.status(Response.Status.BAD_REQUEST).entity("Franchise muss übergeben werden, z.B.: '/200'").build();
+        }
+        else{
+            filter.setFranchise(franchise);
+        }
+
+        filter.setBaseFranchise(baseFranchise.orElse(null));
+        filter.setBaseTarif(baseTarif.orElse(null));
+
+        if (unfalleinschluss.isPresent()) {
+            filter.setUnfalleinschluss(1 == unfalleinschluss.get());
+        }
+
+        if (altersuntergruppe.isPresent()) {
+            filter.setAltersuntergruppe(altersuntergruppe.get());
+        }
+
+        String json = new MongoDbAccess(this.mongoDbUri, this.mongoDbName).filterTarife(filter);
+        return Response.ok(json, MediaType.APPLICATION_JSON).build();
+
     }
 }

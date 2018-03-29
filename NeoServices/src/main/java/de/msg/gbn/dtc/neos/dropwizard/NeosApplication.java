@@ -36,6 +36,7 @@ public class NeosApplication extends Application<NeosConfiguration> {
         addCorsFilter(environment);
         environment.jersey().register(new TarifeResource(configuration.getMongoDbUri(), configuration.getMongoDbName()));
         environment.jersey().register(new RegionenResource(configuration.getMongoDbUri(), configuration.getMongoDbName()));
+        environment.jersey().register(new JaxRsExceptionMapper());
     }
 
     private static void addCorsFilter(Environment environment) {
