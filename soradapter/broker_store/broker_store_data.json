@@ -1,0 +1,31 @@
+[
+  {
+    "key": "PARTNER",
+    "values": [
+      {
+        "key": "partner1",
+        "value": "erste Versicherung"
+      },
+      {
+        "key": "partner2",
+        "value": "zweite Versicherung"
+      },
+      {
+        "key": "partner3",
+        "value": "dritte Versicherung"
+      },
+      {
+        "key": "partner4",
+        "value": "vierte Versicherung"
+      },
+      {
+        "key": "partner5",
+        "value": "fuenfte Versicherung"
+      },
+      {
+        "key": "partner6",
+        "value": "sechste Versicherung"
+      }
+    ]
+  }
+]

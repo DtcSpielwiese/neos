@@ -1,0 +1,575 @@
+[
+  {
+    "@type": "NaturalPerson",
+    "_id": "n3054n4-506572736f6e-1",
+    "firstName": "Michael",
+    "salutation": "Herr",
+    "birthdate": "1979-12-11",
+    "gender": {
+      "key": "1",
+      "sorValue": "männlich",
+      "sdaValue": "männlich"
+    },
+    "employee": false,
+    "uwgLastChanged": "2019-02-18T00:00:00.000Z[UTC]",
+    "uwgLetter": "UNDEFINED",
+    "uwgPhone": "UNDEFINED",
+    "uwgFax": "UNDEFINED",
+    "uwgMail": "UNDEFINED",
+    "uwgSMS": "UNDEFINED",
+    "name": "Steiner",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".de",
+        "loCode": "GER",
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "key": "276",
+        "sorValue": "Deutschland",
+        "sdaValue": "Deutschland"
+      },
+      "postalCode": "04105",
+      "city": "Leipzig",
+      "street": "Humboldtstr. 51"
+    },
+    "partnerRelations": [
+      {
+        "uuid": "n3054n4-61647669736f72-1",
+        "partnerRole": {
+          "key": "14",
+          "sdaValue": "Vermittler",
+          "sorValue": "Vermittler"
+        }
+      }
+    ],
+    "bankAccount": {
+      "accountHolder": "Michael Steiner",
+      "iban": "DE860555929876542100",
+      "bic": "WELADE8LXXX"
+    },
+    "avatars": [
+      {
+        "name": "Michael",
+        "reference": "host/path2Pic",
+        "creationDate": "2017-12-31T23:00Z[UTC]"
+      }
+    ],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "updated": "2019-02-18T00:00:00.000Z[UTC]",
+      "sorResourceKeys": [
+        "506572736f6e-1",
+        "1"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "506572736f6e-1"
+        },
+        {
+          "key": "PANR",
+          "value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "@type": "NaturalPerson",
+    "_id": "n3054n4-506572736f6e-2",
+    "firstName": "Max",
+    "salutation": "Herr",
+    "academicTitle": "Dr.",
+    "birthdate": "1980-01-01",
+    "gender": {
+      "key": "1",
+      "sorValue": "männlich",
+      "sdaValue": "männlich"
+    },
+    "employee": false,
+    "uwgLastChanged": "2019-02-18T00:00:00.000Z[UTC]",
+    "uwgLetter": "UNDEFINED",
+    "uwgPhone": "UNDEFINED",
+    "uwgFax": "UNDEFINED",
+    "uwgMail": "UNDEFINED",
+    "uwgSMS": "UNDEFINED",
+    "name": "Schulz",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".de",
+        "loCode": "GER",
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "key": "276",
+        "sorValue": "Deutschland",
+        "sdaValue": "Deutschland"
+      },
+      "postalCode": "20354",
+      "city": "Hamburg",
+      "street": "Hauptstraße 4"
+    },
+    "partnerRelations": [
+      {
+        "uuid": "n3054n4-506572736f6e-3",
+        "partnerRole": {
+          "key": "P1",
+          "sdaValue": "Ehegatte",
+          "sorValue": "Ehegatte"
+        }
+      },
+      {
+        "uuid": "n3054n4-506572736f6e-4",
+        "partnerRole": {
+          "key": "P2",
+          "sdaValue": "Kind",
+          "sorValue": "Kind"
+        }
+      },
+      {
+        "uuid": "n3054n4-61647669736f72-2",
+        "partnerRole": {
+          "key": "14",
+          "sdaValue": "Vermittler",
+          "sorValue": "Vermittler"
+        }
+      }
+    ],
+    "bankAccount": {
+      "accountHolder": "Max Schulz",
+      "iban": "DE24441600142404409000",
+      "bic": "GENODEM1DOR"
+    },
+    "communicationAddresses": [
+      {
+        "type": "PHONE",
+        "commAddrType": {
+          "_id": "31",
+          "sorValue": "Telefon mobil privat",
+          "sdaValue": "Telefonnumer Mobil Privat",
+          "key": "31"
+        },
+        "address": "+4917712340000"
+      },
+      {
+        "type": "EMAIL",
+        "commAddrType": {
+          "_id": "50",
+          "sorValue": "Email ohne Schutz",
+          "sdaValue": "E-Mail",
+          "key": "50"
+        },
+        "address": "schulz@mail.de"
+      }
+    ],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "updated": "2019-02-18T00:00:00.000Z[UTC]",
+      "sorResourceKeys": [
+        "506572736f6e-2",
+        "2"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "506572736f6e-2"
+        },
+        {
+          "key": "PANR",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  {
+    "@type": "NaturalPerson",
+    "_id": "n3054n4-506572736f6e-3",
+    "firstName": "Maxime",
+    "salutation": "Frau",
+    "birthdate": "1985-07-01",
+    "gender": {
+      "key": "2",
+      "sorValue": "weiblich",
+      "sdaValue": "weiblich"
+    },
+    "employee": false,
+    "uwgLastChanged": "2019-02-18T00:00:00.000Z[UTC]",
+    "uwgLetter": "UNDEFINED",
+    "uwgPhone": "UNDEFINED",
+    "uwgFax": "UNDEFINED",
+    "uwgMail": "UNDEFINED",
+    "uwgSMS": "UNDEFINED",
+    "name": "Schulz",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".de",
+        "loCode": "GER",
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "key": "276",
+        "sorValue": "Deutschland",
+        "sdaValue": "Deutschland"
+      },
+      "postalCode": "20354",
+      "city": "Hamburg",
+      "street": "Hauptstraße 4"
+    },
+    "bankAccount": {
+      "accountHolder": "Maxime Schulz",
+      "iban": "DE24441600142404409001",
+      "bic": "GENODEM1DOR"
+    },
+    "communicationAddresses": [
+      {
+        "type": "PHONE",
+        "commAddrType": {
+          "_id": "31",
+          "sorValue": "Telefon mobil privat",
+          "sdaValue": "Telefonnumer Mobil Privat",
+          "key": "31"
+        },
+        "address": "+4917712345000"
+      },
+      {
+        "type": "EMAIL",
+        "commAddrType": {
+          "_id": "50",
+          "sorValue": "Email ohne Schutz",
+          "sdaValue": "E-Mail",
+          "key": "50"
+        },
+        "address": "schulz@mail.de"
+      }
+    ],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "updated": "2019-02-18T00:00:00.000Z[UTC]",
+      "sorResourceKeys": [
+        "506572736f6e-3",
+        "3"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "506572736f6e-3"
+        },
+        {
+          "key": "PANR",
+          "value": "3"
+        }
+      ]
+    }
+  },
+  {
+    "@type": "NaturalPerson",
+    "_id": "n3054n4-506572736f6e-4",
+    "firstName": "Paul",
+    "salutation": "",
+    "birthdate": "2017-04-01",
+    "gender": {
+      "key": "1",
+      "sorValue": "männlich",
+      "sdaValue": "männlich"
+    },
+    "employee": false,
+    "uwgLastChanged": "2019-02-18T00:00:00.000Z[UTC]",
+    "uwgLetter": "UNDEFINED",
+    "uwgPhone": "UNDEFINED",
+    "uwgFax": "UNDEFINED",
+    "uwgMail": "UNDEFINED",
+    "uwgSMS": "UNDEFINED",
+    "name": "Schulz",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".de",
+        "loCode": "GER",
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "key": "276",
+        "sorValue": "Deutschland",
+        "sdaValue": "Deutschland"
+      },
+      "postalCode": "20354",
+      "city": "Hamburg",
+      "street": "Hauptstraße 4"
+    },
+    "communicationAddresses": [],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "updated": "2019-02-18T00:00:00.000Z[UTC]",
+      "sorResourceKeys": [
+        "506572736f6e-4",
+        "4"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "506572736f6e-4"
+        },
+        {
+          "key": "PANR",
+          "value": "4"
+        }
+      ]
+    }
+  },
+  {
+    "@type": "NaturalPerson",
+    "_id": "n3054n4-506572736f6e-5",
+    "firstName": "Nadja",
+    "salutation": "Frau",
+    "birthdate": "1983-07-20",
+    "gender": {
+      "key": "2",
+      "sorValue": "weiblich",
+      "sdaValue": "weiblich"
+    },
+    "employee": false,
+    "uwgLastChanged": "2019-02-18T00:00:00.000Z[UTC]",
+    "uwgLetter": "UNDEFINED",
+    "uwgPhone": "UNDEFINED",
+    "uwgFax": "UNDEFINED",
+    "uwgMail": "UNDEFINED",
+    "uwgSMS": "UNDEFINED",
+    "name": "Fichte",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".ch",
+        "loCode": "SUI",
+        "alpha2": "CH",
+        "alpha3": "CHE",
+        "key": "756",
+        "sorValue": "Schweiz",
+        "sdaValue": "Schweiz"
+      },
+      "postalCode": "8001",
+      "city": "Zürich",
+      "street": "Poststr. 12"
+    },
+    "partnerRelations": [
+      {
+        "uuid": "n3054n4-61647669736f72-2",
+        "partnerRole": {
+          "key": "14",
+          "sdaValue": "Vermittler",
+          "sorValue": "Vermittler"
+        }
+      }
+    ],
+    "bankAccount": {
+      "accountHolder": "Nadja Fichte",
+      "iban": "CH3908704016075473007",
+      "bic": "POFICHBEXXX"
+    },
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "updated": "2019-02-18T00:00:00.000Z[UTC]",
+      "sorResourceKeys": [
+        "506572736f6e-5",
+        "5"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "506572736f6e-5"
+        },
+        {
+          "key": "PANR",
+          "value": "5"
+        }
+      ]
+    }
+  },
+  {
+    "@type": "NaturalPerson",
+    "_id": "n3054n4-506572736f6e-6",
+    "firstName": "Hans",
+    "salutation": "Herr",
+    "academicTitle": "",
+    "birthdate": "1960-01-01",
+    "gender": {
+      "key": "1",
+      "sorValue": "männlich",
+      "sdaValue": "männlich"
+    },
+    "employee": false,
+    "uwgLastChanged": "2019-02-18T00:00:00.000Z[UTC]",
+    "uwgLetter": "UNDEFINED",
+    "uwgPhone": "UNDEFINED",
+    "uwgFax": "UNDEFINED",
+    "uwgMail": "UNDEFINED",
+    "uwgSMS": "UNDEFINED",
+    "name": "Wagner",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".de",
+        "loCode": "GER",
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "key": "276",
+        "sorValue": "Deutschland",
+        "sdaValue": "Deutschland"
+      },
+      "postalCode": "09112",
+      "city": "Chemnitz",
+      "street": "Barbarossastr. 38"
+    },
+    "partnerRelations": [
+      {
+        "uuid": "n3054n4-506572736f6e-7",
+        "partnerRole": {
+          "key": "P1",
+          "sdaValue": "Ehegatte",
+          "sorValue": "Ehegatte"
+        }
+      },
+      {
+        "uuid": "n3054n4-61647669736f72-2",
+        "partnerRole": {
+          "key": "14",
+          "sdaValue": "Vermittler",
+          "sorValue": "Vermittler"
+        }
+      }
+    ],
+    "bankAccount": {
+      "accountHolder": "Hans Wagner",
+      "iban": "DE8705000012340006666",
+      "bic": "CHEKDE81XXX"
+    },
+    "communicationAddresses": [
+      {
+        "type": "PHONE",
+        "commAddrType": {
+          "_id": "31",
+          "sorValue": "Telefon mobil privat",
+          "sdaValue": "Telefonnumer Mobil Privat",
+          "key": "31"
+        },
+        "address": "+4915212345678"
+      },
+      {
+        "type": "EMAIL",
+        "commAddrType": {
+          "_id": "50",
+          "sorValue": "Email ohne Schutz",
+          "sdaValue": "E-Mail",
+          "key": "50"
+        },
+        "address": "hans.wagner@mail.de"
+      }
+    ],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "updated": "2019-02-18T00:00:00.000Z[UTC]",
+      "sorResourceKeys": [
+        "506572736f6e-6",
+        "6"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "506572736f6e-6"
+        },
+        {
+          "key": "PANR",
+          "value": "6"
+        }
+      ]
+    }
+  },
+  {
+    "@type": "NaturalPerson",
+    "_id": "n3054n4-506572736f6e-7",
+    "firstName": "Chantal",
+    "salutation": "Frau",
+    "birthdate": "1985-07-01",
+    "gender": {
+      "key": "2",
+      "sorValue": "weiblich",
+      "sdaValue": "weiblich"
+    },
+    "employee": false,
+    "uwgLastChanged": "2019-02-18T00:00:00.000Z[UTC]",
+    "uwgLetter": "UNDEFINED",
+    "uwgPhone": "UNDEFINED",
+    "uwgFax": "UNDEFINED",
+    "uwgMail": "UNDEFINED",
+    "uwgSMS": "UNDEFINED",
+    "name": "Wagner",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".de",
+        "loCode": "GER",
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "key": "276",
+        "sorValue": "Deutschland",
+        "sdaValue": "Deutschland"
+      },
+      "postalCode": "09112",
+      "city": "Chemnitz",
+      "street": "Barbarossastr. 38"
+    },
+    "partnerRelations": [
+      {
+        "uuid": "n3054n4-61647669736f72-1",
+        "partnerRole": {
+          "key": "14",
+          "sdaValue": "Vermittler",
+          "sorValue": "Vermittler"
+        }
+      }
+    ],
+    "bankAccount": {
+      "accountHolder": "Chantal Wagner",
+      "iban": "DE8705000012340008888",
+      "bic": "CHEKDE81XXX"
+    },
+    "communicationAddresses": [
+      {
+        "type": "PHONE",
+        "commAddrType": {
+          "_id": "31",
+          "sorValue": "Telefon mobil privat",
+          "sdaValue": "Telefonnumer Mobil Privat",
+          "key": "31"
+        },
+        "address": "+49177678901111"
+      },
+      {
+        "type": "EMAIL",
+        "commAddrType": {
+          "_id": "50",
+          "sorValue": "Email ohne Schutz",
+          "sdaValue": "E-Mail",
+          "key": "50"
+        },
+        "address": "chantal.wagner@mail.de"
+      }
+    ],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "updated": "2019-02-18T00:00:00.000Z[UTC]",
+      "sorResourceKeys": [
+        "506572736f6e-7",
+        "7"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "506572736f6e-7"
+        },
+        {
+          "key": "PANR",
+          "value": "7"
+        }
+      ]
+    }
+  }
+]

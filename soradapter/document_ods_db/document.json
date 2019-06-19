@@ -1,0 +1,65 @@
+[
+    {
+        "id": "n3054n4-646f63756d656e74-1",
+        "externalId": {
+            "sorResourceKeys": [
+                {
+                    "key": "n3054n4-646f63756d656e74-1"
+                }
+            ],
+            "sorKeyElements": [
+                {
+                    "key": "paginierNummer",
+                    "value": "20180405-IH2-001.001.001"
+                }
+            ]
+        },
+        "objectStoreKey": "FE80/MjAxODA0MDUtSUgyLTAwMS4wMDEuMDAx.pdf",
+        "title": "Heiratsurkunde",
+        "category": "Persönliche Dokumente",
+        "type": "Heiratsurkunde",
+        "created": "2019-02-18T00:00:00.000Z",
+        "date": "2019-02-18T00:00:00.000Z",
+        "dateIn": "2019-02-18T00:00:00.000Z",
+        "orderDate": "2019-02-18T00:00:00.000Z",
+        "protectionClass": 1,
+        "classifications": [
+            {
+                "id": "n3054n4-506572736f6e-2",
+                "type": {
+                    "key": "040",
+                    "sdaValue": "Partner",
+                    "sorValue": "Partner"
+                }
+            },
+            {
+                "id": "n3054n4-pr0duk7-2",
+                "type": {
+                    "key": "010",
+                    "sdaValue": "Contract",
+                    "sorValue": "Contract"
+                }
+            }
+        ],
+        "inOutbound": "INBOUND",
+        "relevantPartners": [
+            {
+                "partnerId": "n3054n4-506572736f6e-2",
+                "role": {
+                    "key": "040",
+                    "sdaValue": "Partner",
+                    "sorValue": "Partner"
+                }
+            },
+            {
+                "partnerId": "n3054n4-61647669736f72-1",
+                "role": {
+                    "key": "040",
+                    "sdaValue": "Partner",
+                    "sorValue": "Partner"
+                }
+            }
+        ],
+        "businessTransactionId": "n3054n4-6765766f-2"
+    }
+]

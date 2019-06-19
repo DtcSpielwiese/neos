@@ -1,0 +1,175 @@
+[
+  {
+    "@type": "LegalEntity",
+    "uuid": "n3054n4-61647669736f72-1",
+    "name": "Patrick Bosse",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".de",
+        "loCode": "GER",
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "uuid": "276",
+        "sorValue": "Deutschland",
+        "sdaValue": "Deutschland",
+        "key": "276"
+      },
+      "postalCode": "09112",
+      "city": "Chemnitz",
+      "street": "Weststr. 99"
+    },
+    "communicationAddresses": [
+      {
+        "type": "EMAIL",
+        "commAddrType": {
+          "uuid": "50",
+          "sorValue": "Email ohne Schutz",
+          "sdaValue": "E-Mail",
+          "key": "50"
+        },
+        "address": "p.bosse@gmx.de"
+      },
+      {
+        "type": "PHONE",
+        "commAddrType": {
+          "uuid": "20",
+          "sorValue": "Telefon dienstlich",
+          "sdaValue": "Telefonnumer Geschäftlich",
+          "key": "20"
+        },
+        "address": "0371 999999"
+      },
+      {
+        "type": "FAX",
+        "commAddrType": {
+          "uuid": "42",
+          "sorValue": "Fax dienstlich",
+          "sdaValue": "Telefax Geschäftlich",
+          "key": "42"
+        },
+        "address": "0371 888888"
+      }
+    ],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "sorResourceKeys": [
+        "61647669736f72-2"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "@type": "LegalEntity",
+    "uuid": "n3054n4-61647669736f72-2",
+    "name": "Ronny Fuchs",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "topLevelDomain": ".de",
+        "loCode": "GER",
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "uuid": "276",
+        "sorValue": "276",
+        "sdaValue": "Deutschland"
+      },
+      "postalCode": "09112",
+      "city": "Chemnitz",
+      "street": "Zwickauer Str. 1"
+    },
+    "communicationAddresses": [
+      {
+        "type": "EMAIL",
+        "commAddrType": {
+          "uuid": "50",
+          "sorValue": "Email ohne Schutz",
+          "sdaValue": "E-Mail",
+          "key": "50"
+        },
+        "address": "r.fuchs@versicherung.de"
+      },
+      {
+        "type": "PHONE",
+        "commAddrType": {
+          "uuid": "20",
+          "sorValue": "Telefon dienstlich",
+          "sdaValue": "Telefonnumer Geschäftlich",
+          "key": "20"
+        },
+        "address": "0371 121212"
+      }
+    ],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "sorResourceKeys": [
+        "61647669736f72-2"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "PAID",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  {
+    "@type": "LegalEntity",
+    "uuid": "n3054n4-6669726d61-1",
+    "name": "Bäckerei Meyer",
+    "postalAddress": {
+      "principalResidence": false,
+      "country": {
+        "sdaValue": "Deutschland"
+      },
+      "postalCode": "09111",
+      "city": "Chemnitz",
+      "street": "Innere Klosterstr. 21"
+    },
+    "communicationAddresses": [
+      {
+        "type": "PHONE",
+        "commAddrType": {
+          "uuid": "10",
+          "sorValue": "Telefon privat",
+          "sdaValue": "Telefonnumer Privat",
+          "key": "10"
+        },
+        "address": "+49371232323"
+      },
+      {
+        "type": "EMAIL",
+        "commAddrType": {
+          "uuid": "50",
+          "sorValue": "Email ohne Schutz",
+          "sdaValue": "E-Mail",
+          "key": "50"
+        },
+        "address": "info@baeckerei-meyer.de"
+      }
+    ],
+    "registrations": [
+      {
+        "name": "xbAV",
+        "RegistrationID": "ABCD-0042"
+      }
+    ],
+    "created": "2019-02-18T00:00:00.000Z[UTC]",
+    "sorKey": {
+      "sorResourceKeys": [
+        "6669726d61-1"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "FIRMID",
+          "value": "1"
+        }
+      ]
+    }
+  }
+]

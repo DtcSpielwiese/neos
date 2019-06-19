@@ -1,0 +1,1336 @@
+[
+    {
+        "uuid": "n3054n4-pr0duk7-1",
+        "productBundleName": "Unfallversicherung",
+        "grossPremium": {
+            "type": "SDAMoney",
+            "value": "34.53",
+            "unit": "EUR"
+        },
+        "policyNumber": "101.100/1/001",
+        "status": {
+            "key": "1",
+            "sorValue": "aktiv",
+            "sdaValue": "lebend"
+        },
+        "paymentAgreement": {
+            "frequencyOfPayment": "monatlich"
+        },
+        "products": [
+            {
+                "@type": "Product",
+                "lineOfBusiness": "Unfallversicherung",
+                "productName": "Unfallversicherung",
+                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                "dateOfTermination": "2025-02-18T00:00:00.000Z[UTC]",
+                "status": {
+                    "key": "1",
+                    "sorValue": "aktiv",
+                    "sdaValue": "lebend"
+                },
+                "grossPremium": {
+                    "type": "SDAMoney",
+                    "value": "34.53",
+                    "unit": "EUR"
+                },
+                "contractNumber": "101.100/1/001",
+                "kindOfInsurance": "Unfallversicherung",
+                "paymentAgreement": {
+                    "frequencyOfPayment": "monatlich",
+                    "formOfPayment": "Bankabruf"
+                },
+                "basicProducts": [
+                    {
+                        "@type": "AccidentInsuranceBasicProduct",
+                        "uuid": "n3054n4-pr0duk7-1-1",
+                        "basicProductName": "24-Stunden-Schutz",
+                        "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                        "status": "Aktiv",
+                        "netPremium": {
+                            "type": "SDAMoney",
+                            "value": "32.24",
+                            "unit": "EUR"
+                        },
+                        "coveringPositions": [
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Todesfall",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "5000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Invalidität mit Progression 400",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "400 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "120000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Unfall-Rentenkapital Top",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "400 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "35.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "100000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Unfallrente 50/90 mit BU-Schutz",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "90 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "50.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "500",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Krankenhaustagegeld",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "1",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "20",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            }
+                        ],
+                        "insuredObjects": [
+                            {
+                                "@type": "InsuredPerson",
+                                "partnerRole": {
+                                    "@type": "PartnerRoleInsuredPerson",
+                                    "uuidPartner": "n3054n4-506572736f6e-1"
+                                },
+                                "name": "Steiner",
+                                "firstName": "Michael",
+                                "insuredprofession": "Versandfertigmacher",
+                                "typeOfOccupation": "angestellt ohne körperliche Tätigkeit",
+                                "birthdate": "1979-12-11",
+                                "gender": {
+                                    "key": "1",
+                                    "sorValue": "männlich",
+                                    "sdaValue": "männlich"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "partnerRoles": [
+            {
+                "@type": "PartnerRoleCustomer",
+                "uuidPartner": "n3054n4-506572736f6e-1"
+            },
+            {
+                "@type": "PartnerRoleContributor",
+                "bankAccount": {
+                    "accountHolder": "Michael Steiner",
+                    "iban": "DE860555929876542100",
+                    "bic": "WELADE8LXXX"
+                },
+                "uuidPartner": "n3054n4-506572736f6e-1"
+            },
+            {
+                "@type": "PartnerRoleAdvisor",
+                "communicationAddresses": [
+                    {
+                        "type": "PHONE",
+                        "commAddrType": {
+                            "key": "20",
+                            "sdaValue": "Telefonnummer Geschäftlich"
+                        },
+                        "address": "0371 999999"
+                    }
+                ],
+                "uuidPartner": "n3054n4-61647669736f72-1"
+            }
+        ],
+        "created": "2019-02-18T00:00:00.000Z[UTC]",
+        "sorKey": {
+            "updated": "2019-02-18T00:00:00.000Z[UTC]",
+            "sorResourceKeys": [
+                "101.100/1/001"
+            ],
+            "otherIdentfiers": [
+                {
+                    "key": "pr0duk7-1"
+                }
+            ],
+            "sorKeyElements": [
+                {
+                    "key": "VNR",
+                    "value": "101100"
+                },
+                {
+                    "key": "VZNR",
+                    "value": "1"
+                },
+                {
+                    "key": "RINR",
+                    "value": "1"
+                }
+            ]
+        }
+    },
+    {
+        "uuid": "n3054n4-pr0duk7-2",
+        "products": [
+            {
+                "@type": "LifeInsuranceProduct",
+                "productName": "SI Flexible Rente",
+                "lineOfBusiness": "Lebensversicherung",
+                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                "dateOfTermination": "2025-02-01T00:00:00.000Z[UTC]",
+                "contractNumber": "10002000/1 1",
+                "paymentAgreement": {
+                    "frequencyOfPayment": "Monatlich",
+                    "premiumDueDate": "01.02.2019"
+                },
+                "grossPremium": {
+                    "type": "SDAMoney",
+                    "value": "0",
+                    "unit": "EUR"
+                },
+                "basicProducts": [
+                    {
+                        "@type": "LifeInsuranceBasicProduct",
+                        "uuid": "n3054n4-pr0duk7-2-1",
+                        "principlePart": true,
+                        "financingType": "nicht relevant",
+                        "phase": "beitragspflichtig",
+                        "employeesContribution": {
+                            "type": "SDAMoney",
+                            "value": "40.00",
+                            "unit": "EUR"
+                        },
+                        "employersContribution": {
+                            "type": "SDAMoney",
+                            "value": "60.00",
+                            "unit": "EUR"
+                        },
+                        "coveringPositions": [
+                            {
+                                "@type": "LifeInsuranceCoveringPosition",
+                                "kindOfBenefit": "Monatlich",
+                                "methodOfFinancing": "nicht relevant",
+                                "sumInsured": [
+                                    {
+                                        "type": "Garantierte Erlebensfallsumme",
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "0",
+                                            "unit": "EUR"
+                                        }
+                                    },
+                                    {
+                                        "type": "Garantierte Rente",
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "0",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "tariffName": "SI Global Garant Invest ab 2017",
+                        "tariffNameShort": "SIGI",
+                        "insuredObjects": [
+                            {
+                                "@type": "InsuredPerson",
+                                "partnerRole": {
+                                    "@type": "PartnerRoleInsuredPerson",
+                                    "uuidPartner": "n3054n4-506572736f6e-2"
+                                }
+                            },
+                            {
+                                "@type": "InsuredPerson",
+                                "partnerRole": {
+                                    "@type": "PartnerRoleInsuredPerson",
+                                    "uuidPartner": "n3054n4-506572736f6e-3"
+                                }
+                            }
+                        ],
+                        "commitmentType": "Beitragszusage mit Mindestleistung",
+                        "taxPrivileged": "kein",
+                        "surplusUtilisation": "VZA"
+                    },
+                    {
+                        "@type": "LifeInsuranceBasicProduct",
+                        "uuid": "n3054n4-pr0duk7-2-2",
+                        "basicProductName": "BU-Barrente",
+                        "coveringPositions": [
+                            {
+                                "@type": "LifeInsuranceCoveringPosition",
+                                "sumInsured": [
+                                    {
+                                        "type": "Garantierte Rente",
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "25.00",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "formOfExecution": "Direktversicherung",
+                "contributionIncreasable": true,
+                "maximumContributionIncrease": {
+                    "type": "SDAMoney",
+                    "value": "20",
+                    "unit": "EUR"
+                },
+                "minimumContributionDecrease": {
+                    "type": "SDAMoney",
+                    "value": "5",
+                    "unit": "EUR"
+                },
+                "validFrom": "2019-02-01T00:00:00.000Z[UTC]"
+            }
+        ],
+        "partnerRoles": [
+            {
+                "@type": "PartnerRoleCustomer",
+                "uuidPartner": "n3054n4-506572736f6e-2"
+            },
+            {
+                "@type": "PartnerRoleAdvisor",
+                "uuidPartner": "n3054n4-61647669736f72-2"
+            }
+        ],
+        "created": "2019-02-18T00:00:00.000Z[UTC]",
+        "sorKey": {
+            "sorResourceKeys": [
+                "10002000/1 1",
+                "pr0duk7-2"
+            ],
+            "sorKeyElements": [
+                {
+                    "key": "VNR",
+                    "value": "10002000"
+                },
+                {
+                    "key": "RINR",
+                    "value": "1"
+                },
+                {
+                    "key": "GK",
+                    "value": "1"
+                }
+            ]
+        }
+    },
+    {
+        "uuid": "n3054n4-pr0duk7-3",
+        "products": [
+            {
+                "@type": "LifeInsuranceProduct",
+                "productName": "SI Flexible Rente",
+                "lineOfBusiness": "Lebensversicherung",
+                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                "dateOfTermination": "2025-02-01T00:00:00.000Z[UTC]",
+                "contractNumber": "10003000/1 4",
+                "paymentAgreement": {
+                    "frequencyOfPayment": "Monatlich",
+                    "premiumDueDate": "01.09.2017"
+                },
+                "grossPremium": {
+                    "type": "SDAMoney",
+                    "value": "0",
+                    "unit": "EUR"
+                },
+                "basicProducts": [
+                    {
+                        "@type": "LifeInsuranceBasicProduct",
+                        "uuid": "n3054n4-pr0duk7-3-1",
+                        "principlePart": true,
+                        "financingType": "nicht relevant",
+                        "phase": "beitragspflichtig",
+                        "employeesContribution": {
+                            "type": "SDAMoney",
+                            "value": "40.00",
+                            "unit": "EUR"
+                        },
+                        "employersContribution": {
+                            "type": "SDAMoney",
+                            "value": "60.00",
+                            "unit": "EUR"
+                        },
+                        "coveringPositions": [
+                            {
+                                "@type": "LifeInsuranceCoveringPosition",
+                                "kindOfBenefit": "Monatlich",
+                                "methodOfFinancing": "nicht relevant",
+                                "sumInsured": [
+                                    {
+                                        "type": "Garantierte Erlebensfallsumme",
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "0",
+                                            "unit": "EUR"
+                                        }
+                                    },
+                                    {
+                                        "type": "Garantierte Rente",
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "0",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "tariffName": "SI Global Garant Invest ab 2017",
+                        "tariffNameShort": "SIGI",
+                        "insuredObjects": [
+                            {
+                                "@type": "InsuredPerson",
+                                "partnerRole": {
+                                    "@type": "PartnerRoleInsuredPerson",
+                                    "uuidPartner": "n3054n4-506572736f6e-5"
+                                }
+                            }
+                        ],
+                        "commitmentType": "Beitragszusage mit Mindestleistung",
+                        "taxPrivileged": "kein",
+                        "surplusUtilisation": "VZA"
+                    },
+                    {
+                        "@type": "LifeInsuranceBasicProduct",
+                        "uuid": "n3054n4-pr0duk7-3-2",
+                        "basicProductName": "BU-Barrente",
+                        "coveringPositions": [
+                            {
+                                "@type": "LifeInsuranceCoveringPosition",
+                                "sumInsured": [
+                                    {
+                                        "type": "Garantierte Rente",
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "25.00",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "formOfExecution": "Direktversicherung",
+                "contributionIncreasable": true,
+                "maximumContributionIncrease": {
+                    "type": "SDAMoney",
+                    "value": "20",
+                    "unit": "EUR"
+                },
+                "minimumContributionDecrease": {
+                    "type": "SDAMoney",
+                    "value": "5",
+                    "unit": "EUR"
+                },
+                "validFrom": "2019-02-01T00:00:00.000Z[UTC]"
+            }
+        ],
+        "partnerRoles": [
+            {
+                "@type": "PartnerRoleCustomer",
+                "uuidPartner": "n3054n4-506572736f6e-5"
+            },
+            {
+                "@type": "PartnerRoleAdvisor",
+                "uuidPartner": "n3054n4-61647669736f72-2"
+            }
+        ],
+        "created": "2019-02-18T00:00:00.000Z[UTC]",
+        "sorKey": {
+            "sorResourceKeys": [
+                "10003000/1 4",
+                "pr0duk7-3"
+            ],
+            "sorKeyElements": [
+                {
+                    "key": "VNR",
+                    "value": "10003000"
+                },
+                {
+                    "key": "RINR",
+                    "value": "1"
+                },
+                {
+                    "key": "GK",
+                    "value": "4"
+                }
+            ]
+        }
+    },
+    {
+        "uuid": "n3054n4-pr0duk7-4",
+        "productBundleName": "Unfallversicherung",
+        "grossPremium": {
+            "type": "SDAMoney",
+            "value": "79.95",
+            "unit": "EUR"
+        },
+        "policyNumber": "101.101/1/001",
+        "status": {
+            "key": "1",
+            "sorValue": "aktiv",
+            "sdaValue": "lebend"
+        },
+        "paymentAgreement": {
+            "frequencyOfPayment": "monatlich"
+        },
+        "products": [
+            {
+                "@type": "Product",
+                "lineOfBusiness": "Unfallversicherung",
+                "productName": "Unfallversicherung",
+                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                "dateOfTermination": "2025-02-01T00:00:00.000Z[UTC]",
+                "status": {
+                    "key": "1",
+                    "sorValue": "aktiv",
+                    "sdaValue": "lebend"
+                },
+                "grossPremium": {
+                    "type": "SDAMoney",
+                    "value": "79.95",
+                    "unit": "EUR"
+                },
+                "contractNumber": "105.544/3/001",
+                "kindOfInsurance": "Unfallversicherung",
+                "paymentAgreement": {
+                    "frequencyOfPayment": "monatlich",
+                    "formOfPayment": "Bankabruf"
+                },
+                "basicProducts": [
+                    {
+                        "@type": "AccidentInsuranceBasicProduct",
+                        "uuid": "n3054n4-pr0duk7-4-1",
+                        "basicProductName": "24-Stunden-Schutz",
+                        "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                        "status": "Aktiv",
+                        "netPremium": {
+                            "type": "SDAMoney",
+                            "value": "61.05",
+                            "unit": "EUR"
+                        },
+                        "coveringPositions": [
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Todesfall",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "5000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Invalidität mit Progression 400",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "400 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "12000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Unfall-Rentenkapital Top",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "400 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "35.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "100000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Unfallrente 50/90 mit BU-Schutz",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "90 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "50.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "500",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Krankenhaustagegeld",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "1",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "20",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            }
+                        ],
+                        "insuredObjects": [
+                            {
+                                "@type": "InsuredPerson",
+                                "partnerRole": {
+                                    "@type": "PartnerRoleInsuredPerson",
+                                    "uuidPartner": "n3054n4-506572736f6e-7"
+                                },
+                                "name": "Wagner",
+                                "firstName": "Chantal",
+                                "insuredprofession": "Versandfertigmacher",
+                                "typeOfOccupation": "angestellt ohne körperliche Tätigkeit",
+                                "birthdate": "1985-07-01",
+                                "gender": {
+                                    "key": "1",
+                                    "sorValue": "weiblich",
+                                    "sdaValue": "weiblich"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "partnerRoles": [
+            {
+                "@type": "PartnerRoleCustomer",
+                "uuidPartner": "n3054n4-506572736f6e-7"
+            },
+            {
+                "@type": "PartnerRoleContributor",
+                "bankAccount": {
+                    "accountHolder": "Chantal Wagner",
+                    "iban": "DE8705000012340008888",
+                    "bic": "CHEKDE81XXX"
+                },
+                "uuidPartner": "n3054n4-506572736f6e-7"
+            },
+            {
+                "@type": "PartnerRoleAdvisor",
+                "communicationAddresses": [
+                    {
+                        "commAddrType": {
+                            "key": "20",
+                            "sdaValue": "Telefonnummer Geschäftlich"
+                        },
+                        "address": "0371 999999"
+                    }
+                ],
+                "uuidPartner": "n3054n4-61647669736f72-1"
+            }
+        ],
+        "created": "2019-02-18T00:00:00.000Z[UTC]",
+        "sorKey": {
+            "updated": "2019-02-18T00:00:00.000Z[UTC]",
+            "sorResourceKeys": [
+                "100.101/1/001",
+                "pr0duk7-4"
+            ],
+            "otherIdentfiers": [
+                {
+                    "key": "pr0duk7-4"
+                }
+            ],
+            "sorKeyElements": [
+                {
+                    "key": "VNR",
+                    "value": "100101"
+                },
+                {
+                    "key": "VZNR",
+                    "value": "1"
+                },
+                {
+                    "key": "RINR",
+                    "value": "1"
+                }
+            ]
+        }
+    },
+    {
+        "uuid": "n3054n4-pr0duk7-5",
+        "productBundleName": "Unfallversicherung",
+        "grossPremium": {
+            "type": "SDAMoney",
+            "value": "101.45",
+            "unit": "EUR"
+        },
+        "policyNumber": "100.102/1/001",
+        "status": {
+            "key": "1",
+            "sorValue": "aktiv",
+            "sdaValue": "lebend"
+        },
+        "paymentAgreement": {
+            "frequencyOfPayment": "monatlich"
+        },
+        "products": [
+            {
+                "@type": "Product",
+                "lineOfBusiness": "Unfallversicherung",
+                "productName": "Unfallversicherung",
+                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                "dateOfTermination": "2025-02-01T00:00:00.000Z[UTC]",
+                "status": {
+                    "key": "1",
+                    "sorValue": "aktiv",
+                    "sdaValue": "lebend"
+                },
+                "grossPremium": {
+                    "type": "SDAMoney",
+                    "value": "101.45",
+                    "unit": "EUR"
+                },
+                "contractNumber": "100.102/1/001",
+                "kindOfInsurance": "Unfallversicherung",
+                "paymentAgreement": {
+                    "frequencyOfPayment": "monatlich",
+                    "formOfPayment": "Bankabruf"
+                },
+                "basicProducts": [
+                    {
+                        "@type": "AccidentInsuranceBasicProduct",
+                        "uuid": "n3054n4-pr0duk7-5-1",
+                        "basicProductName": "24-Stunden-Schutz",
+                        "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                        "status": "Aktiv",
+                        "netPremium": {
+                            "type": "SDAMoney",
+                            "value": "92.24",
+                            "unit": "EUR"
+                        },
+                        "coveringPositions": [
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Todesfall",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "5000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Invalidität mit Progression 400",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "400 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "120000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Unfall-Rentenkapital Top",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "400 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "35.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "100000",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Unfallrente 50/90 mit BU-Schutz",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "benefitDescription": "90 %",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "0",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "50.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "500",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "AccidentInsuranceCoveringPosition",
+                                "coveringPositionName": "Krankenhaustagegeld",
+                                "dateOfStart": "2019-02-01T00:00:00.000Z[UTC]",
+                                "status": "Aktiv",
+                                "limits": [
+                                    {
+                                        "type": "Karenzzeit",
+                                        "measurement": {
+                                            "@type": "SDACustomMeasurement",
+                                            "value": "1",
+                                            "unit": "Tag"
+                                        }
+                                    },
+                                    {
+                                        "type": "Selbstbehalt",
+                                        "measurement": {
+                                            "@type": "SDAPercentage",
+                                            "value": "0.0",
+                                            "unit": "%"
+                                        }
+                                    }
+                                ],
+                                "sumInsured": [
+                                    {
+                                        "amount": {
+                                            "type": "SDAMoney",
+                                            "value": "20",
+                                            "unit": "EUR"
+                                        }
+                                    }
+                                ],
+                                "adjustment": {
+                                    "type": "Summenanpassung",
+                                    "name": "Erhöhung gemäß GRV-Anpassung, mindestens jedoch um den bedingsgemäß vereinbarten Prozentsatz",
+                                    "measurement": {
+                                        "@type": "SDAPercentage",
+                                        "value": "0.0",
+                                        "unit": "%"
+                                    }
+                                }
+                            }
+                        ],
+                        "insuredObjects": [
+                            {
+                                "@type": "InsuredPerson",
+                                "partnerRole": {
+                                    "@type": "PartnerRoleInsuredPerson",
+                                    "uuidPartner": "n3054n4-506572736f6e-6"
+                                },
+                                "name": "Wagner",
+                                "firstName": "Hans",
+                                "insuredprofession": "Versandfertigmacher",
+                                "typeOfOccupation": "angestellt ohne körperliche Tätigkeit",
+                                "birthdate": "1960-01-01",
+                                "gender": {
+                                    "key": "1",
+                                    "sorValue": "männlich",
+                                    "sdaValue": "männlich"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "partnerRoles": [
+            {
+                "@type": "PartnerRoleCustomer",
+                "uuidPartner": "n3054n4-506572736f6e-6"
+            },
+            {
+                "@type": "PartnerRoleContributor",
+                "bankAccount": {
+                    "accountHolder": "Hans Wagner",
+                    "iban": "DE8705000012340006666",
+                    "bic": "CHEKDE81XXX"
+                },
+                "type": "CONTRIBUTOR",
+                "uuidPartner": "n3054n4-506572736f6e-6"
+            },
+            {
+                "@type": "PartnerRoleAdvisor",
+                "communicationAddresses": [
+                    {
+                        "commAddrType": {
+                            "key": "20",
+                            "sdaValue": "Telefonnummer Geschäftlich"
+                        },
+                        "address": "0371 121212"
+                    }
+                ],
+                "uuidPartner": "n3054n4-61647669736f72-2"
+            }
+        ],
+        "created": "2019-02-18T00:00:00.000Z[UTC]",
+        "sorKey": {
+            "updated": "2019-02-18T00:00:00.000Z[UTC]",
+            "sorResourceKeys": [
+                "100.102/1/001",
+                "pr0duk7-5"
+            ],
+            "otherIdentfiers": [
+                {
+                    "key": "pr0duk7-5"
+                }
+            ],
+            "sorKeyElements": [
+                {
+                    "key": "VNR",
+                    "value": "100102"
+                },
+                {
+                    "key": "VZNR",
+                    "value": "1"
+                },
+                {
+                    "key": "RINR",
+                    "value": "1"
+                }
+            ]
+        }
+    }
+]

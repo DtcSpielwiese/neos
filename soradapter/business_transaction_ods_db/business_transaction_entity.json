@@ -1,0 +1,148 @@
+[
+  {
+    "uuid": "n3054n4-6765766f-1",
+    "created": "2019-02-18T00:00:00.000Z",
+    "updated": "2019-02-18T00:00:00.000Z",
+    "typeId": "120",
+    "typeName": "Vertrag/Änderung",
+    "transactionId": "12014001",
+    "transactionName": "Beitragsfreistellung",
+    "inputChannel": "EMail",
+    "creationDate": "2019-02-18T00:00:00.000Z",
+    "effectiveDate": "2019-03-01T00:00:00.000Z",
+    "status": {
+      "name": "Erfolgreich",
+      "completed": false,
+      "source": "CRM",
+      "updated": "2019-02-18T00:00:00.000Z"
+    },
+    "classification": {
+      "id": "n3054n4-pr0duk7-1",
+      "type": {
+        "key": "010",
+        "sdaValue": "InsuranceContract",
+        "sorValue": "Contract"
+      }
+    },
+    "references": [
+      {
+        "id": "n3054n4-pr0duk7-1",
+        "type": {
+          "key": "010",
+          "sdaValue": "InsuranceContract",
+          "sorValue": "Contract"
+        }
+      },
+      {
+        "id": "n3054n4-506572736f6e-1",
+        "type": {
+          "key": "040",
+          "sdaValue": "Partner",
+          "sorValue": "Partner"
+        }
+      },
+      {
+        "id": "n3054n4-61647669736f72-1",
+        "type": {
+          "key": "040",
+          "sdaValue": "Partner",
+          "sorValue": "Partner"
+        }
+      }
+    ],
+    "descriptionField": "wurde mit Frau Schmidt und Herrn Otto abgestimmt!",
+    "reasonForChange": "Beitragsfreistellung",
+    "ordererName": "Patrick Bosse",
+    "ordererIdInternal": "U4711",
+    "ordererIdExternal": "817",
+    "operationIdExternal": "0003201805161220580000368",
+    "sorKey": {
+      "sorResourceKeys": [
+        "123456"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "ProcessID",
+          "value": "123456"
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "n3054n4-6765766f-2",
+    "created": "2019-02-18T00:00:00.000Z",
+    "updated": "2019-02-18T00:00:00.000Z",
+    "typeId": "110",
+    "typeName": "Partner/Änderung",
+    "transactionId": "12014002",
+    "transactionName": "Namensänderung",
+    "inputChannel": "EMail",
+    "creationDate": "2019-02-18T00:00:00.000Z",
+    "effectiveDate": "2019-03-01T00:00:00.000Z",
+    "status": {
+      "name": "Abgeschlossen",
+      "completed": true,
+      "source": "CRM",
+      "updated": "2019-02-18T00:00:00.000Z"
+    },
+    "classification": {
+      "id": "n3054n4-506572736f6e-2",
+      "type": {
+        "key": "040",
+        "sdaValue": "Partner",
+        "sorValue": "Partner"
+      }
+    },
+    "references": [
+      {
+        "id": "n3054n4-pr0duk7-2",
+        "type": {
+          "key": "010",
+          "sdaValue": "InsuranceContract",
+          "sorValue": "Contract"
+        }
+      },
+      {
+        "id": "n3054n4-506572736f6e-2",
+        "type": {
+          "key": "040",
+          "sdaValue": "Partner",
+          "sorValue": "Partner"
+        }
+      },
+      {
+        "id": "n3054n4-61647669736f72-2",
+        "type": {
+          "key": "040",
+          "sdaValue": "Partner",
+          "sorValue": "Partner"
+        }
+      },
+      {
+        "id": "n3054n4-646f63756d656e74-1",
+        "type": {
+          "key": "050",
+          "sdaValue": "Document",
+          "sorValue": "Document"
+        }
+      }
+    ],
+    "descriptionField": "Heiratsurkunde liegt vor",
+    "reasonForChange": "Heirat",
+    "ordererName": "Max Schulz",
+    "ordererIdInternal": "U4711",
+    "ordererIdExternal": "900",
+    "operationIdExternal": "0003201805161220580000369",
+    "sorKey": {
+      "sorResourceKeys": [
+        "123457"
+      ],
+      "sorKeyElements": [
+        {
+          "key": "ProcessID",
+          "value": "123457"
+        }
+      ]
+    }
+  }
+]
